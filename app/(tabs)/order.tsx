@@ -4,11 +4,11 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
 const SafeAreaView = styled(RNSafeAreaView);
 
-const Search = () => {
+const Order = () => {
     return (
         <SafeAreaView className="flex-1 bg-background p-5">
-            <Text>Search</Text>
+            <Text>Orders</Text>
         </SafeAreaView>
     )
 }
-export default Search
+export default Order
