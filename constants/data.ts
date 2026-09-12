@@ -10,13 +10,15 @@ export const tabs: AppTab[] = [
 ];
 
 export const HOME_USER = {
-    name: "Joshua | Josh",
+    name: "Joshua",
 };
 
 export const HOME_BALANCE = {
-    amount: 2489.48,
+    amount: 8489.48,
     nextRenewalDate: "2026-03-18T09:00:00.000Z",
 };
+
+
 
 export const UPCOMING_SUBSCRIPTIONS: UpcomingSubscription[] = [
     {
@@ -105,5 +107,63 @@ export const HOME_SUBSCRIPTIONS: Subscription[] = [
         billing: "Yearly",
         renewalDate: "2026-04-02T10:00:00.000Z",
         color: "#b8e8d0",
+    }
+];
+export const CATEGORIES: Category[] = [
+    {
+        id: "restaurants",
+        name: "Restaurants",
+        icon: icons.restaurant,
+        slug: "restaurants",
+        color: "bg-amber-100",
+        textColor: "text-amber-800",
+    },
+    {
+        id: "shops",
+        name: "Shops",
+        icon: icons.shop,
+        slug: "shops",
+        color: "bg-blue-100",
+        textColor: "text-blue-800",
+    },
+    {
+        id: "mall",
+        name: "Mall",
+        icon: icons.mall,
+        slug: "mall",
+        color: "bg-purple-100",
+        textColor: "text-purple-800",
+    },
+    {
+        id: "local",
+        name: "Local",
+        icon: icons.local,
+        slug: "local",
+        color: "bg-green-100",
+        textColor: "text-green-800",
+    },
+    {
+        id: "pharmacy",
+        name: "Pharmacy",
+        icon: icons.pharmacy,
+        slug: "pharmacy",
+        color: "bg-green-100",
+        textColor: "text-green-800",
+    },
+    {
+        id: "laundromat",
+        name: "Laundromat",
+        icon: icons.laundromat,
+        slug: "laundromat",
+        color: "bg-cyan-100",
+        textColor: "text-cyan-800",
+    },
+    {
+        id: "errand",
+        name: "Send an Errand",
+        icon: icons.logistics,
+        slug: "send-an-errand",
+        color: "bg-orange-100",
+        textColor: "text-orange-800",
     },
 ];

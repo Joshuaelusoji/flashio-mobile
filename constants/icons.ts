@@ -16,26 +16,21 @@ import plus from "@/assets/icons/plus.png";
 import setting from "@/assets/icons/setting.png";
 import spotify from "@/assets/icons/spotify.png";
 import wallet from "@/assets/icons/wallet.png";
+import restaurant from "@/assets/icons/restaurant.png";
+import shop from "@/assets/icons/shop.png";
+import mall from "@/assets/icons/mall.png";
+import local from "@/assets/icons/local.png";
+import pharmacy from "@/assets/icons/pharmacy.png";
+import laundromat from "@/assets/icons/laundromat.png";
+import logistics from "@/assets/icons/logistics.png";
+
 
 export const icons = {
-    home,
-    wallet,
-    setting,
-    activity,
-    add,
-    back,
-    menu,
-    plus,
-    notion,
-    dropbox,
-    openai,
-    adobe,
-    medium,
-    figma,
-    spotify,
-    github,
-    claude,
-    canva,
+    home, wallet, setting, activity, add, back, menu,
+    plus, notion, dropbox, openai, adobe, medium, figma,
+    spotify, github, claude, canva,
+    restaurant, shop, mall, local,pharmacy, laundromat,
+    logistics
 } as const;
 
 export type IconKey = keyof typeof icons;

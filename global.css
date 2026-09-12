@@ -5,7 +5,7 @@
 @import "nativewind/theme";
 
 @theme {
-    --color-background: #fff9e3;
+    --color-background: #F2F0EB;
     --color-foreground: #081126;
     --color-card: #fff8e7;
     --color-muted: #f6eecf;
@@ -16,6 +16,16 @@
     --color-success: #16a34a;
     --color-destructive: #dc2626;
     --color-subscription: #8fd1bd;
+
+    /*Flashio */
+    --color-restaurant: #F5E6BF;
+
+    --font-sans: sans-regular;
+    --font-sans-light: sans-light;
+    --font-sans-medium: sans-medium;
+    --font-sans-semibold: sans-semibold;
+    --font-sans-bold: sans-bold;
+    --font-sans-extrabold: sans-extrabold;
 
     --spacing-0: 0px;
     --spacing-1: 4px;
@@ -37,12 +47,6 @@
     --spacing-24: 96px;
     --spacing-30: 120px;
 
-    --font-sans: sans-regular;
-    --font-sans-light: sans-light;
-    --font-sans-medium: sans-medium;
-    --font-sans-semibold: sans-semibold;
-    --font-sans-bold: sans-bold;
-    --font-sans-extrabold: sans-extrabold;
 }
 
 @layer components {
@@ -79,7 +83,7 @@
     }
 
     .home-add-icon {
-        @apply size-12;
+        @apply size-10 border-1 rounded-full;
     }
 
     .home-balance-card {
@@ -118,16 +122,20 @@
         @apply text-lg font-sans-semibold text-primary;
     }
 
-    .upcoming-card {
-        @apply mr-4 w-44 rounded-2xl border border-black/10 bg-background p-4;
+    .restaurant-card {
+        @apply mr-4 w-28 h-20 rounded-lg border border-black/10 bg-restaurant p-4;
     }
 
-    .upcoming-row {
-        @apply flex-row items-center gap-3;
+    .restaurant-row {
+        @apply flex items-start gap-1;
     }
 
-    .upcoming-icon {
-        @apply size-14;
+    .restaurant-icon {
+        @apply size-7;
+    }
+
+    .restaurant-name {
+        @apply text-xs font-sans text-primary;
     }
 
     .upcoming-price {
@@ -138,9 +146,6 @@
         @apply text-sm font-sans-semibold text-muted-foreground;
     }
 
-    .upcoming-name {
-        @apply mt-2 text-lg font-sans-bold text-primary;
-    }
 
     .sub-card {
         @apply rounded-2xl border border-border p-4;

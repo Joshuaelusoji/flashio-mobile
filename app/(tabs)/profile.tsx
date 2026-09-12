@@ -1,14 +1,35 @@
-import {View, Text} from 'react-native'
+import "@/global.css";
 import { styled } from "nativewind";
+import { Image, Text, View } from "react-native";
+import images from "@/constants/images";
 import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+import {HOME_BALANCE, HOME_USER} from "@/constants/data";
+import { icons } from "@/constants/icons";
+import {formatCurrency} from "@/constants/lib/utils";
 
 const SafeAreaView = styled(RNSafeAreaView);
 
-const Profile = () => {
+/** Renders the home menu with links to the app's primary flows. */
+export default function App() {
     return (
         <SafeAreaView className="flex-1 bg-background p-5">
-            <Text>Profile</Text>
+            <View className="home-header">
+                <View className="home-user">
+                    <Image source={images.avatar} className="home-avatar" />
+                    <Text className="home-user-name">{HOME_USER.name}</Text>
+
+                </View>
+                <Image source={icons.add} className="home-add-icon" />
+
+            </View>
+            <View className="home-balance-card">
+                <Text className="home-balance-label">Balance</Text>
+                <View className="home-balance-row">
+                    <Text className="home-balance-amount">{formatCurrency(HOME_BALANCE.amount)}</Text>
+                </View>
+
+            </View>
+
         </SafeAreaView>
-    )
+    );
 }
-export default Profile
