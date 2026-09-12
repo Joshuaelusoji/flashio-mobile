@@ -50,6 +50,19 @@ declare global {
     interface ListHeadingProps {
         title: string;
     }
+
+    interface Category {
+        id: string;
+        name: string;
+        icon: ImageSourcePropType;
+        slug: string;
+        color: string;
+        textColor: string;
+    }
+
+    interface ShopByCategoryCardProps {
+        data: Category;
+    }
 }
 
 export {};
