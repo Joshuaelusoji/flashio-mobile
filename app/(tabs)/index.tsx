@@ -10,9 +10,7 @@ const SafeAreaView = styled(RNSafeAreaView);
 export default function App() {
     return (
         <SafeAreaView className="flex-1 bg-background p-5">
-            <Text className="text-xl font-bold text-success">
-                Menu
-            </Text>
+            <Text className="text-7xl font-sans-extrabold text-success">Menu</Text>
             <Link href="/WelcomeScreen" className="mt-4 rounded bg-primary text-white p-4">
                 Go to WelcomeScreen
             </Link>
@@ -22,14 +20,7 @@ export default function App() {
             <Link href="/(auth)/sign-up" className="mt-4 rounded bg-primary text-white p-4">
                 SignUp
             </Link>
-            <Link href="/app/orders/spotify">Order</Link>
-            <Link href={{
-                pathname: "/orders/[id]",
-                params: { id: "claude" },
-            }}
-            >
-                Claude Max Subscription
-            </Link>
+
         </SafeAreaView>
     );
 }
