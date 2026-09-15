@@ -1,24 +1,19 @@
 import { icons } from "./icons";
 
 export const tabs: AppTab[] = [
-    { name: "index", title: "Home", icon: icons.home },
-    { name: "search", title: "Search", icon: icons.wallet },
-    { name: "order", title: "Order", icon: icons.activity },
-    { name: "support", title: "Support", icon: icons.setting },
-    { name: "profile", title: "Profile", icon: icons.setting },
-
+    { name: "index",   title: "Home",       icon: icons.home },
+    { name: "search",  title: "Search",     icon: icons.binocular },
+    { name: "order",   title: "Order",      icon: icons.receipts },
+    { name: "support", title: "Support",    icon: icons.headphone },
+    { name: "profile", title: "Profile",    icon: icons.user }
 ];
 
-export const HOME_USER = {
-    name: "Joshua",
-};
+export const HOME_USER = { name: "Joshua" };
 
 export const HOME_BALANCE = {
     amount: 8489.48,
     nextRenewalDate: "2026-03-18T09:00:00.000Z",
 };
-
-
 
 export const UPCOMING_SUBSCRIPTIONS: UpcomingSubscription[] = [
     {
@@ -165,5 +160,165 @@ export const CATEGORIES: Category[] = [
         slug: "send-an-errand",
         color: "bg-orange-100",
         textColor: "text-orange-800",
+    },
+];
+
+export const RESTAURANTS: Restaurant[] = [
+    {
+        id: "tantalizer",
+        path: "Tantalizer",
+        name: "Tantalizer",
+        imageUrl: "https://res.cloudinary.com/dvwccrxix/image/upload/v1788435477/Tantalizer.jpg",
+        location: "Ajebandele",
+        deliveryTime: "20-30 mins",
+        deliveryFee: 500,
+        description: "Popular Nigerian restaurant serving authentic local dishes.",
+        isActive: true,
+    },
+    {
+        id: "mr-biggs",
+        path: "Mr-Biggs",
+        name: "Mr Biggs",
+        imageUrl: "https://res.cloudinary.com/dvwccrxix/image/upload/v1788452816/Mr-Bigg_s.png",
+        location: "New era",
+        deliveryTime: "15-25 mins",
+        deliveryFee: 400,
+        description: "Nigeria's favourite chicken chain.",
+        isActive: true,
+    },
+    {
+        id: "crunchy",
+        path: "Crunchy",
+        name: "Crunchy",
+        imageUrl: "https://res.cloudinary.com/dvwccrxix/image/upload/v1788452826/Crunchies.webp",
+        location: "Mayfair",
+        deliveryTime: "20-35 mins",
+        deliveryFee: 450,
+        description: "Classic Nigerian fast food chain.",
+        isActive: true,
+    },
+    {
+        id: "captain-cook",
+        path: "Captain-cook",
+        name: "Captain Cook",
+        imageUrl: "https://res.cloudinary.com/dvwccrxix/image/upload/v1788452820/Captain-Cook.png",
+        location: "Mayfair",
+        deliveryTime: "20-35 mins",
+        deliveryFee: 450,
+        description: "Classic Nigerian fast food chain.",
+        isActive: true,
+    },
+    {
+        id: "mama-put",
+        path: "mama_put",
+        name: "Mama Put",
+        imageUrl: "https://res.cloudinary.com/dvwccrxix/image/upload/v1788533096/Egusi.jpg",
+        location: "Fagbale",
+        deliveryTime: "25-40 mins",
+        deliveryFee: 500,
+        description: "Authentic Nigerian bukka experience.",
+        isActive: true,
+    },
+    {
+        id: "ivory-bite",
+        path: "ivory_bite",
+        name: "Ivory Bite",
+        imageUrl: "https://res.cloudinary.com/dvwccrxix/image/upload/v1788452792/Ivory-Bite.jpg",
+        location: "Ibadan Road",
+        deliveryTime: "15-25 mins",
+        deliveryFee: 400,
+        description: "Finger licking fast food experience.",
+        isActive: true,
+    },
+
+];
+
+export const LOCAL_MEALS: LocalMeal[] = [
+    {
+        id: '1',
+        name: 'Jollof Rice & Chicken',
+        price: 3500,
+        location: 'Lagos Island',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451696/Jollof-Rice.jpg',
+    },
+    {
+        id: '2',
+        name: 'Peppered Suya Platter',
+        price: 4200,
+        location: 'Victoria Island',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451398/Suya.jpg',
+    },
+    {
+        id: '3',
+        name: 'Egusi Soup & Pounded Yam',
+        price: 5000,
+        location: 'Lekki Phase 1',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451631/Pounded-Yam_Egusi.jpg',
+    },
+    {
+        id: '4',
+        name: 'Grilled Catfish & Chips',
+        price: 6500,
+        location: 'Ikoyi',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451346/Grilled-Catfish.jpg',
+    },
+    {
+        id: '5',
+        name: 'Ofada Rice & Ayamase',
+        price: 4000,
+        location: 'Surulere',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451346/Grilled-Catfish.jpg',
+    },
+    {
+        id: '6',
+        name: 'Asun & Plantain',
+        price: 3800,
+        location: 'Yaba',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451313/Asun-Plantain.jpg',
+    },
+];
+
+export const CONTINENTAL_MEALS: ContinentalMeal[] = [
+    {
+        id: '1',
+        name: 'Grilled Chicken & Mash',
+        price: 5500,
+        location: 'Victoria Island',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451000/Grilled-Chicken-Mash.jpg',
+    },
+    {
+        id: '2',
+        name: 'Spaghetti Bolognese',
+        price: 4800,
+        location: 'Ikoyi',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451000/Spaghetti-Bolognese.jpg',
+    },
+    {
+        id: '3',
+        name: 'Beef Steak & Fries',
+        price: 6800,
+        location: 'Lekki Phase 1',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451000/Beef-Steak-Fries.jpg',
+    },
+    {
+        id: '4',
+        name: 'BBQ Ribs & Coleslaw',
+        price: 7200,
+        location: 'Ikeja GRA',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451000/BBQ-Ribs-Coleslaw.jpg',
+    },
+    {
+        id: '5',
+        name: 'Chicken Alfredo Pasta',
+        price: 5200,
+        location: 'Surulere',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451000/Chicken-Alfredo-Pasta.jpg',
+    },
+    {
+        id: '6',
+        name: 'Fish & Chips',
+        price: 4500,
+        location: 'Yaba',
+        imageUrl: 'https://res.cloudinary.com/dvwccrxix/image/upload/v1788451000/Fish-and-Chips.jpg',
     },
 ];

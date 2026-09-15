@@ -1,0 +1,26 @@
+import {View, Text} from 'react-native'
+import React from 'react'
+import { Image } from 'expo-image'
+import { styled } from 'nativewind'
+
+const StyledImage = styled(Image)
+
+const LocalMealCard = ({ data: { name, price, location, imageUrl }}: LocalMealCardProps) => {
+    return (
+        <View className="local-meal-card">
+            <StyledImage
+                source={imageUrl}
+                contentFit="cover"
+                className="local-meal-image"
+            />
+            <View className="local-meal-row mt-6">
+                <Text className="local-meal-name">{name}</Text>
+            </View>
+            <View className=" flex-row justify-between">
+                <Text className='local-meal-location'>{location}</Text>
+                <Text className='local-meal-price'>{price}</Text>
+            </View>
+        </View>
+    )
+}
+export default LocalMealCard
