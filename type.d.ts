@@ -47,7 +47,7 @@ declare global {
     interface UpcomingSubscriptionCardProps
         extends Omit<UpcomingSubscription, "id"> {}
 
-    interface ListHeadingProps {
+    interface CategoryHeadingProps {
         title: string;
     }
 
@@ -63,6 +63,62 @@ declare global {
     interface ShopByCategoryCardProps {
         data: Category;
     }
+
+    interface Restaurant {
+        id: string;
+        path: string;
+        name: string;
+        imageUrl: string;
+        location: string;
+        deliveryTime: string;
+        deliveryFee: number;
+        description: string;
+        isActive: boolean;
+
+    }
+
+    interface RestaurantCardProps {
+        data: Restaurant;
+
+    }
+
+    interface RestaurantsHeadingProps {
+        title: string;
+    }
+
+    interface LocalMeal {
+        id: string;
+        name: string;
+        price: number;
+        location: string;
+        imageUrl: string;
+    }
+
+    interface LocalMealCardProps {
+        data: LocalMeal;
+    }
+
+    interface LocalMealHeadingProps {
+        title: string;
+    }
+
+    interface ContinentalMeal {
+        id: string;
+        name: string;
+        price: number;
+        location: string;
+        imageUrl: string;
+    }
+
+    interface ContinentalMealCardProps {
+        data: LocalMeal;
+    }
+
+    interface ContinentalMealHeadingProps {
+        title: string;
+    }
+
+
 }
 
 export {};
